@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersegiActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/persegi1"
+        />
+
+    <EditText
+        android:id="@+id/tbeditsisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnhitungpersegi"
+        android:hint="Masukan Sisi"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnhitungpersegi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/purple_500"
+        android:text="Hitung Persegi"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="10sp"
+        />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/btnhitungpersegi">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="Keliling Persegi"
+            android:textAlignment="center"
+            android:textSize="23sp"
+            />
+        <TextView
+            android:id="@+id/lblkelilingpersegi"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textAlignment="center"
+            android:text="0"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnhitungpersegi">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="Luas Persegi"
+            android:textAlignment="center"
+            android:textSize="23sp"/>
+        <TextView
+            android:id="@+id/lblluaspersegi"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textAlignment="center"
+            android:text="0"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

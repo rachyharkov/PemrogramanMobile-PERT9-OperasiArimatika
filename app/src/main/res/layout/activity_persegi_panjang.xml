@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersegiPanjangActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/persegipanjang"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/tbeditlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnhitungpersegipanjang"
+        android:hint="Input Lebar"/>
+    <EditText
+        android:id="@+id/tbeditpanjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tbeditlebar"
+        android:hint="Input Panjang"/>
+    <Button
+        android:id="@+id/btnhitungpersegipanjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/purple_700"
+        android:text="Hitung Persegi Panjang"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:textColor="@android:color/white"
+        android:onClick="hitungPP"/> <!--called from here-->
+    
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/btnhitungpersegipanjang">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Keliling Persegi Panjang"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/lblkelilingpersegipanjang"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textAlignment="center"
+            android:text="0"
+            android:textSize="25sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnhitungpersegipanjang">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Keliling Persegi Panjang"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/lblluaspersegipanjang"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textAlignment="center"
+            android:text="0"
+            android:textSize="25sp"/>
+    </LinearLayout>
+</RelativeLayout>
